@@ -78,10 +78,10 @@ class MainActivity : AppCompatActivity() {
 
                     // Update the TextView with the fetched Battery Percentage data
                     when (batteryPercentageValue) {
-                        is Long -> textViewBatteryPercentage.text = "Battery Percentage \n" +
-                                " Status at ${batteryPercentageValue}%"
-                        is Double -> textViewBatteryPercentage.text = "Battery Percentage \n" +
-                                "                                \" Status at ${batteryPercentageValue}%"
+                        is Long -> textViewBatteryPercentage.text = "Battery Status\n" +
+                                "at ${batteryPercentageValue}%"
+                        is Double -> textViewBatteryPercentage.text = "Battery Status \n" +
+                                "                                \"at ${batteryPercentageValue}%"
                         else -> textViewBatteryPercentage.text = "Battery Percentage \n Status at No data available %"
                     }
                 } catch (e: Exception) {
