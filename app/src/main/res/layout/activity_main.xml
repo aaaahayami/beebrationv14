@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
+    android:layout_width="600dp"
     android:layout_height="match_parent"
-    android:background="@color/bgcolor"
+    android:background="@drawable/backgroundyellow"
     tools:context="com.example.beebration_v2.MainActivity">
 
+
     <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="490dp"
+        android:layout_height="932dp"
         android:layout_weight="1"
+        android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:fillViewport="true">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
 
             <LinearLayout
@@ -30,242 +32,149 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="14dp"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/adamina"
-                    android:text="          BEEBRATION"
-                    android:textColor="#484801"
-                    android:textSize="30dp"
-                     />
-
-
-            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_width="455dp"
+                android:layout_height="1018dp"
+                android:layout_marginTop="0dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/bgcolor"
-                        app:cardElevation="50dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/gradientcard"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="20dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="5dp"
-                                android:layout_weight="1"
-                                android:text="Voltage"
-                                android:textColor="#484801"
-                                android:fontFamily="sans-serif-thin"
-                                android:textSize="26dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="1dp"
-                                android:layout_weight="1"
-                                android:fontFamily="sans-serif-thin"
-                                android:text="Displays the voltage\nstatus of the device"
-                                android:textColor="#484801"
-                                android:textSize="14dp"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/bgcolor"
-                        app:cardElevation="50dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/uigradient"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="20dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="5dp"
-                                android:layout_weight="1"
-                                android:fontFamily="sans-serif-thin"
-                                android:text="Battery\nPercentage"
-                                android:textColor="#484801"
-                                android:textSize="26dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="1dp"
-                                android:fontFamily="sans-serif-thin"
-                                android:layout_weight="1"
-                                android:text="Displays the current\nbattery percentage\nof the battery"
-                                android:textColor="#484801"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:orientation="horizontal">
+                    android:layout_height="286dp">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+
+                    <LinearLayout
+                        android:layout_width="182dp"
+                        android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:backgroundTint="@color/bgcolor"
-                        app:cardElevation="50dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/uigradient"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="20dp">
+                        android:orientation="vertical"
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="5dp"
-                                android:layout_weight="1"
-                                android:text="Temperature"
-                                android:fontFamily="sans-serif-thin"
-                                android:textColor="#484801"
-                                android:textSize="24dp"
-                                android:textStyle="bold" />
+                        app:cardCornerRadius="100dp">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="1dp"
-                                android:fontFamily="sans-serif-thin"
-                                android:layout_weight="1"
-                                android:text="Displays the current\ntemperature at\nBacnotan, La Union"
-                                android:textColor="#484801"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/about_text_view"
+                            android:layout_width="100dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="ABOUT US "
+                            android:textColor="#f9a603"
+                            android:textSize="20sp"
+                            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/about2_text_view"
+                            android:layout_width="188dp"
+                            android:layout_height="218dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Beebration displays the voltage, battery percentage, and status of the device's light bulbs. The beebration device is used to harvest the energy from the vibration sound of the bees incorporated inside the beehive. "
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_width="182dp"
+                        android:layout_height="193dp"
+                        android:layout_margin="20dp"
+
                         android:backgroundTint="@color/bgcolor"
+                        app:cardBackgroundColor="#E8E4C9"
+                        app:cardCornerRadius="10dp"
                         app:cardElevation="50dp">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="184dp"
+                            android:layout_height="191dp"
+
                             android:background="@drawable/gradientcard"
-                            android:orientation="vertical"
+                            android:orientation="horizontal"
                             android:paddingHorizontal="10dp"
-                            android:paddingVertical="20dp">
+                            android:paddingVertical="20dp"
+                            app:cardBackgroundColor="#000000"
+                            app:cardCornerRadius="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="145dp"
+                            android:layout_height="166dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:id="@+id/temp"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="5dp"
+                                android:layout_width="145dp"
+                                android:layout_height="109dp"
+                                android:layout_marginVertical="3dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="0dp"
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-thin"
-                                android:text="   29°C"
+                                android:text=" 10°C"
                                 android:textColor="#484801"
-                                android:textSize="44dp"
-                                 />
+                                android:textSize="45dp" />
 
                             <TextView
                                 android:id="@+id/address"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="189dp"
+                                android:layout_height="8dp"
                                 android:layout_marginVertical="1dp"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginBottom="30dp"
                                 android:layout_weight="1"
-                                android:text="Bacnotan, La Union"
                                 android:fontFamily="sans-serif-thin"
+                                android:text="@string/bacnotan_la_union"
                                 android:textColor="#484801"
-                                android:textSize="18dp"
+                                android:textSize="15dp"
                                 android:textStyle="bold" />
 
 
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
+                    android:layout_width="368dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="20dp"
+
                     android:backgroundTint="@color/bgcolor"
+                    app:cardBackgroundColor="#E8E4C9"
+                    app:cardCornerRadius="10dp"
                     app:cardElevation="50dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginRight="0dp"
                         android:background="@drawable/gradientcard"
                         android:orientation="horizontal"
                         android:paddingHorizontal="10dp"
-                        android:paddingVertical="20dp">
+                        android:paddingVertical="20dp"
+                        app:cardBackgroundColor="#000000"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="157dp"
+                            android:layout_width="180dp"
+                            android:layout_height="95dp"
+                            android:layout_marginTop="0dp"
                             android:layout_weight="1"
                             android:scaleType="center"
                             android:src="@drawable/voltage" />
@@ -273,8 +182,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
                             android:orientation="vertical">
 
                             <TextView
@@ -282,10 +191,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginVertical="2dp"
                                 android:layout_weight="1"
-                                android:text="VOLTAGE STATUS"
                                 android:fontFamily="sans-serif-thin"
+                                android:text="Voltage Status"
                                 android:textColor="#484801"
-                                android:textSize="26dp"
+                                android:textSize="24dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -293,10 +202,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="\nNo data"
+
                                 android:fontFamily="sans-serif-thin"
-                                android:textColor="#FFA700"
-                                android:textSize="28dp"
+                                android:text="\nNo data"
+                                android:textColor="#484801"
+                                android:textSize="20dp"
                                 android:textStyle="bold" />
 
 
@@ -306,25 +216,31 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
+                    android:layout_width="368dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="20dp"
+
                     android:backgroundTint="@color/bgcolor"
+                    app:cardBackgroundColor="#E8E4C9"
+                    app:cardCornerRadius="10dp"
                     app:cardElevation="50dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/uigradient"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/gradientcard"
                         android:orientation="horizontal"
                         android:paddingHorizontal="10dp"
-                        android:paddingVertical="20dp">
+                        android:paddingVertical="20dp"
+                        app:cardBackgroundColor="#000000"
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
-                            android:layout_width="142dp"
-                            android:layout_height="124dp"
+                            android:layout_width="173dp"
+                            android:layout_height="86dp"
                             android:layout_weight="1"
                             android:scaleType="center"
                             android:src="@drawable/battery_logo" />
@@ -337,24 +253,13 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="2dp"
-                                android:layout_weight="1"
-                                android:text="BATTERY STATUS"
-                                android:fontFamily="sans-serif-thin"
-                                android:textColor="#484801"
-                                android:textSize="26dp"
-                                android:textStyle="bold" />
-
-                            <TextView
                                 android:id="@+id/textView_batteryPercentage"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="\nNo data"
-                                android:textColor="#FFA700"
                                 android:fontFamily="sans-serif-thin"
+                                android:text="\nNo data"
+                                android:textColor="#484801"
                                 android:textSize="24dp"
                                 android:textStyle="bold" />
 
@@ -362,86 +267,79 @@
                         </LinearLayout>
 
 
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
+                    android:layout_width="368dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="20dp"
+
                     android:backgroundTint="@color/bgcolor"
-                    app:cardElevation="50dp"/>
-
-            </LinearLayout>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/bgcolor"
-                app:cardElevation="50dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/uigradient"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="20dp">
-
-                    <ImageView
-                        android:layout_width="142dp"
-                        android:layout_height="124dp"
-                        android:layout_weight="1"
-                        android:scaleType="center"
-                        android:src="@drawable/bulb" />
+                    app:cardBackgroundColor="#E8E4C9"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="50dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/gradientcard"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="20dp"
+                        app:cardBackgroundColor="#000000"
+                        app:cardCornerRadius="10dp">
 
-                        <TextView
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="94dp"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            android:src="@drawable/bulb" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="2dp"
+                            android:layout_marginHorizontal="10dp"
                             android:layout_weight="1"
-                            android:text="LIGHT BULB STATUS"
-                            android:fontFamily="sans-serif-thin"
-                            android:textColor="#484801"
-                            android:textSize="26dp"
-                            android:textStyle="bold" />
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textView_lightBulbStatus"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="\nNo data"
-                            android:textColor="#FFA700"
-                            android:textSize="24dp"
-                            android:fontFamily="sans-serif-thin"
-                            android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="2dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="Light Bulb Status"
+                                android:textColor="#484801"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_lightBulbStatus"
+                                android:layout_width="234dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="\nNo data"
+                                android:textColor="#484801"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
 
 
                     </LinearLayout>
 
 
+                </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/bgcolor"
-                app:cardElevation="50dp"/>
+            </LinearLayout>
+
 
         </LinearLayout>
 

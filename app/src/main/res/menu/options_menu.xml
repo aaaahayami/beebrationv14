@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/miHome"
+    <item
+        android:id="@+id/about"
         android:title="Home"
-        android:icon="@drawable/ic_home" />
+        android:icon="@drawable/ic_home"/>
 
-
-    <item android:id="@+id/miSettings"
-        android:title="About"
-        android:icon="@drawable/voltage" />
+    <item
+        android:id="@+id/shorts"
+        android:title="Shorts"
+        android:icon="@drawable/about_logo"
+        />
 
 </menu>

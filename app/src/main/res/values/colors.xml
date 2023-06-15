@@ -16,11 +16,17 @@
     <color name="loginPageBackgroundColor">#F8BC24</color>
     <color name="BackgroundColor1">#FFFFFF</color>
     <color name="textInputOutlineColor">#FFDE8A</color>
-    <color name = "bgcolor">#FFD858</color>
+    <color name = "bgcolor">#e6b400</color>
     <color name = "textcolor">#FDFCFF</color>
     <color name = "subtextcolor">#B7EEEEEE</color>
     <color name = "btnstart">#7B7EA4</color>
     <color name = "btnend">#575C84</color>
     <color name = "cardstart">#93B7D7</color>
     <color name = "cardend">#474D71</color>
+
+    <color name="bottom_nav_background">#FFFFFF</color>
+    <color name="bottom_nav_item">#7B7EA4</color>
+    <color name="bottom_nav_selected_item">#FFFFFF</color>
+
+
 </resources>
